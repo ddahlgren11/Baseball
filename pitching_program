@@ -1,404 +1,176 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Editable 6-Day Pitching Program</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-        /* Basic dark mode support */
-        .dark {
-            /* Custom dark mode colors */
-        }
-    </style>
-    <script>
-        // Basic dark mode toggle logic
-        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            document.documentElement.classList.add('dark');
-        } else {
-            document.documentElement.classList.remove('dark');
-        }
-    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable 7-Day Pitching Program</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #E0F7FA; /* Light blue background */
+        }
+        .dark body {
+            background-color: #002D3A;
+        }
+    </style>
 </head>
-<body class="bg-gray-100 dark:bg-gray-900 transition-colors duration-300">
+<body class="transition-colors duration-300">
 
-    <div class="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8">
-        <div class="flex flex-col sm:flex-row justify-between items-center gap-4 mb-8">
-            <h1 class="text-3xl sm:text-4xl font-bold text-center text-gray-900 dark:text-white">
-                Editable 6-Day Pitching Program
-            </h1>
-            <div class="flex gap-2">
-                <button id="save-btn" class="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-md font-semibold transition-colors shadow">
-                    Save & Download
-                </button>
-                <button id="clear-edits-btn" class="px-4 py-2 bg-red-600 hover:bg-red-700 text-white rounded-md font-semibold transition-colors shadow">
-                    Reset to Default
-                </button>
-            </div>
-        </div>
-        <p class="text-center text-lg text-gray-700 dark:text-gray-300 mb-10">
-            Click into any text box to edit your program. Your changes are automatically saved to your browser.
-            <br>
-            <strong class="text-blue-600 dark:text-blue-400">Use "Save & Download" to create a new HTML file to share or email.</strong>
-        </p>
+    <div class="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8">
+        <div class="flex flex-col sm:flex-row justify-between items-center gap-4 mb-8">
+            <h1 class="text-3xl sm:text-4xl font-bold text-center text-gray-900 dark:text-white">
+                Editable 7-Day Pitching Program
+            </h1>
+            <div class="flex gap-2">
+                <button id="save-btn" class="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-md font-semibold transition-colors shadow">
+                    Save & Download
+                </button>
+                <button id="clear-edits-btn" class="px-4 py-2 bg-red-500 hover:bg-red-600 text-white rounded-md font-semibold transition-colors shadow">
+                    Reset to Default
+                </button>
+            </div>
+        </div>
+        <p class="text-center text-lg text-gray-700 dark:text-gray-300 mb-10">
+            Click into any text box to edit your program. Your changes are automatically saved to your browser.
+            <br>
+            <strong class="text-blue-500 dark:text-blue-400">Use "Save & Download" to create a new HTML file to share or email.</strong>
+        </p>
 
-        <!-- Program Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Program Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
+            <!-- Day 1-3 -->
+            <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl">
+                <div class="bg-blue-400 dark:bg-blue-600 p-4">
+                    <h2 class="text-2xl font-bold text-white">Day 1: Bullpen Day</h2>
+                </div>
+                <div class="p-5 space-y-4">
+                    <textarea id="day1-focus" rows="2" class="w-full p-3 rounded-md border">High-intent throwing. Focus on command, pitch execution, and simulating game situations. Fastball command is key.</textarea>
+                    <textarea id="day1-pre" rows="4" class="w-full p-3 rounded-md border">Full dynamic warm-up (10 min). - T-Spine mobility (foam roller, rotations). - Hip mobility (leg swings, hip circles). - J-Bands (full routine). - Plyo-ball throws (if part of routine).</textarea>
+                    <textarea id="day1-drills" rows="3" class="w-full p-3 rounded-md border">Rocker Drills (to feel ground connection). Pause Drills (at top of leg lift) to check balance. Connection Ball Drills (if applicable).</textarea>
+                    <textarea id="day1-throwing" rows="4" class="w-full p-3 rounded-md border">Long Toss (build up to 120-150 ft, intent). - Pull-downs (2-3) - Bullpen: 25-30 pitches. - Set 1: 10 fastballs (glove side / arm side). - Set 2: 15 pitches (FB, CH, CB/SL). - Set 3: 5 pitches "out" pitches.</textarea>
+                    <textarea id="day1-post" rows="3" class="w-full p-3 rounded-md border">J-Band flush routine. - Rotator cuff strengthening (light). - T-Spine mobility. - Full-body foam roll.</textarea>
+                </div>
+            </div>
+            <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl">
+                <div class="bg-blue-400 dark:bg-blue-600 p-4">
+                    <h2 class="text-2xl font-bold text-white">Day 2: Recovery Day</h2>
+                </div>
+                <div class="p-5 space-y-4">
+                    <textarea id="day2-focus" rows="2" class="w-full p-3 rounded-md border">Active recovery. Promote blood flow, flush system, and work on mobility. Listen to the body.</textarea>
+                    <textarea id="day2-pre" rows="4" class="w-full p-3 rounded-md border">Light dynamic warm-up (5 min). - Full body foam roll. - Hip mobility circuits. - Banded T-spine and shoulder work.</textarea>
+                    <textarea id="day2-drills" rows="3" class="w-full p-3 rounded-md border">No high-intent drills. - Mirror mechanics (no throw). - Balance drills.</textarea>
+                    <textarea id="day2-throwing" rows="4" class="w-full p-3 rounded-md border">Very light toss (optional, based on feel). - Max 60-75 ft. - Focus purely on clean arm action and movement. - 10-15 minutes max. - Alternative: No throw, just arm care.</textarea>
+                    <textarea id="day2-post" rows="3" class="w-full p-3 rounded-md border">Light J-Band flush. - Static stretching (lats, pecs, legs). - Mobility work (hips, ankles, T-spine).</textarea>
+                </div>
+            </div>
+            <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl">
+                <div class="bg-blue-400 dark:bg-blue-600 p-4">
+                    <h2 class="text-2xl font-bold text-white">Day 3: Long Toss Day</h2>
+                </div>
+                <div class="p-5 space-y-4">
+                    <textarea id="day3-focus" rows="2" class="w-full p-3 rounded-md border">Arm strength, extension, and efficient movement. Get the arm moving freely.</textarea>
+                    <textarea id="day3-pre" rows="4" class="w-full p-3 rounded-md border">Full dynamic warm-up (10 min). - T-Spine and hip mobility focus. - J-Bands (full routine). - Reverse throws (deceleration focus).</textarea>
+                    <textarea id="day3-drills" rows="3" class="w-full p-3 rounded-md border">Walking Wind-ups (to build momentum). - Step-Back Throws (for lower half drive).</textarea>
+                    <textarea id="day3-throwing" rows="4" class="w-full p-3 rounded-md border">Long Toss Program: - Warm-up throws (to 90 ft). - Stretching it out (90 ft to max distance, e.g., 250-300+ ft). - Focus on arc and pulling down. - Compression phase: 3-5 high-intent throws from max distance. - Work back in (120, 90, 60 ft).</textarea>
+                    <textarea id="day3-post" rows="3" class="w-full p-3 rounded-md border">J-Band flush. - Scap/shoulder strengthening. - Foam roll lats, back, and legs.</textarea>
+                </div>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Day 4-6 -->
+            <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl">
+                <div class="bg-blue-400 dark:bg-blue-600 p-4">
+                    <h2 class="text-2xl font-bold text-white">Day 4: Mechanics Day</h2>
+                </div>
+                <div class="p-5 space-y-4">
+                    <textarea id="day4-focus" rows="2" class="w-full p-3 rounded-md border">Drill-heavy day. Isolate and correct one specific mechanical flaw (e.g., front side, lead leg block, arm action).</textarea>
+                    <textarea id="day4-pre" rows="4" class="w-full p-3 rounded-md border">Full dynamic warm-up. - J-Bands. - Focus on hip/T-spine separation drills (mobility).</textarea>
+                    <textarea id="day4-drills" rows="3" class="w-full p-3 rounded-md border">Towel Drills (for arm path). - Lead Leg Block Drills. - Step-Back Drills (for drive). - Video analysis after every 10 reps.</textarea>
+                    <textarea id="day4-throwing" rows="4" class="w-full p-3 rounded-md border">Light catch play (90-120 ft). - Focus is 100% on implementing the drill "feel" into the throw. - No high-intent. - "Feel" flat-ground: 10-15 pitches at 60% focusing *only* on the mechanical fix.</textarea>
+                    <textarea id="day4-post" rows="3" class="w-full p-3 rounded-md border">Light J-Band flush. - Rotator cuff strengthening (light). - Mobility work.</textarea>
+                </div>
+            </div>
+            <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl">
+                <div class="bg-blue-400 dark:bg-blue-600 p-4">
+                    <h2 class="text-2xl font-bold text-white">Day 5: 2nd Bullpen / Game Sim</h2>
+                </div>
+                <div class="p-5 space-y-4">
+                    <textarea id="day5-focus" rows="2" class="w-full p-3 rounded-md border">"Game" simulation. Pitch sequencing, handling "adversity" (simulated counts), and repeating delivery.</textarea>
+                    <textarea id="day5-pre" rows="4" class="w-full p-3 rounded-md border">Full dynamic warm-up (10 min). - T-Spine mobility. - Hip mobility. - J-Bands (full routine).</textarea>
+                    <textarea id="day5-drills" rows="3" class="w-full p-3 rounded-md border">Tempo drills (feeling rhythm). - Drills from Day 4 (1-2) to reinforce mechanics. - Focus on quick, efficient warm-up.</textarea>
+                    <textarea id="day5-throwing" rows="4" class="w-full p-3 rounded-md border">Long Toss (up to 120 ft, just to get loose). - Bullpen: 30-35 pitches. - Set 1: 10 pitches (Warm-up). - Set 2: 20 pitches (Simulate 5 hitters, 4 pitches each). - Set 3: 5 pitches (High-leverage, 3-2 count, 0-0 count).</textarea>
+                    <textarea id="day5-post" rows="3" class="w-full p-3 rounded-md border">J-Band flush routine. - Rotator cuff strengthening. - Full-body foam roll. - Mobility.</textarea>
+                </div>
+            </div>
+            <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl">
+                <div class="bg-blue-400 dark:bg-blue-600 p-4">
+                    <h2 class="text-2xl font-bold text-white">Day 6: Active Recovery</h2>
+                </div>
+                <div class="p-5 space-y-4">
+                    <textarea id="day6-focus" rows="2" class="w-full p-3 rounded-md border">Flush and feel. Light movement to promote recovery before rest day. Clean up any soreness.</textarea>
+                    <textarea id="day6-pre" rows="4" class="w-full p-3 rounded-md border">Light dynamic warm-up. - Full foam roll. - Banded shoulder and scap work.</textarea>
+                    <textarea id="day6-drills" rows="3" class="w-full p-3 rounded-md border">Light balance drills. - Mirror work (checking posture).</textarea>
+                    <textarea id="day6-throwing" rows="4" class="w-full p-3 rounded-md border">Light toss (max 75 ft). - Just to feel the arm move. - 10 minutes, very low intent. - OR "touch-feel" flat ground: 10-15 pitches at 50% focusing on clean, easy mechanics.</textarea>
+                    <textarea id="day6-post" rows="3" class="w-full p-3 rounded-md border">Light J-Band flush. - Full body stretch. - Focus on hips, lats, and pecs.</textarea>
+                </div>
+            </div>
+        </div>
 
-            <!-- Day 1: High Intent / Bullpen -->
-            <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl">
-                <div class="bg-blue-600 dark:bg-blue-700 p-4">
-                    <h2 class="text-2xl font-bold text-white">Day 1: Bullpen Day</h2>
-                </div>
-                <div class="p-5 space-y-4">
-                    <div>
-                        <label for="day1-focus" class="text-lg font-semibold text-gray-800 dark:text-gray-100 block mb-2">Focus of the Day</label>
-                        <textarea id="day1-focus" rows="2" class="w-full p-3 rounded-md border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 dark:text-gray-200 focus:ring-2 focus:ring-blue-500 outline-none transition-all"
-                        >High-intent throwing. Focus on command, pitch execution, and simulating game situations. Fastball command is key.</textarea>
-                    </div>
-                    <div>
-                        <label for="day1-pre" class="text-lg font-semibold text-gray-800 dark:text-gray-100 block mb-2">Mobility / Arm Care (Pre)</label>
-                        <textarea id="day1-pre" rows="4" class="w-full p-3 rounded-md border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 dark:text-gray-200 focus:ring-2 focus:ring-blue-500 outline-none transition-all"
-                        >Full dynamic warm-up (10 min).
-- T-Spine mobility (foam roller, rotations).
-- Hip mobility (leg swings, hip circles).
-- J-Bands (full routine).
-- Plyo-ball throws (if part of routine).</textarea>
-                    </div>
-                    <div>
-                        <label for="day1-drills" class="text-lg font-semibold text-gray-800 dark:text-gray-100 block mb-2">Drills & Mechanics</label>
-                        <textarea id="day1-drills" rows="3" class="w-full p-3 rounded-md border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 dark:text-gray-200 focus:ring-2 focus:ring-blue-500 outline-none transition-all"
-                        >Rocker Drills (to feel ground connection).
-Pause Drills (at top of leg lift) to check balance.
-Connection Ball Drills (if applicable).</textarea>
-                    </div>
-                    <div>
-                        <label for="day1-throwing" class="text-lg font-semibold text-gray-800 dark:text-gray-100 block mb-2">Throwing Protocol</label>
-                        <textarea id="day1-throwing" rows="4" class="w-full p-3 rounded-md border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 dark:text-gray-200 focus:ring-2 focus:ring-blue-500 outline-none transition-all"
-                        >Long Toss (build up to 120-150 ft, intent).
-- Pull-downs (2-3)
-- Bullpen: 25-30 pitches.
-- Set 1: 10 fastballs (glove side / arm side).
-- Set 2: 15 pitches (FB, CH, CB/SL).
-- Set 3: 5 pitches "out" pitches.</textarea>
-                    </div>
-                    <div>
-                        <label for="day1-post" class="text-lg font-semibold text-gray-800 dark:text-gray-100 block mb-2">Post-Throw Arm Care</label>
-                        <textarea id="day1-post" rows="3" class="w-full p-3 rounded-md border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 dark:text-gray-200 focus:ring-2 focus:ring-blue-500 outline-none transition-all"
-                        >J-Band flush routine.
-- Rotator cuff strengthening (light).
-- T-Spine mobility.
-- Full-body foam roll.</textarea>
-                    </div>
-                </div>
-            </div>
+        <div class="text-center mt-10 p-6 bg-white dark:bg-gray-800 rounded-xl shadow-md">
+            <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Day 7: Full Rest</h3>
+            <p class="text-lg text-gray-700 dark:text-gray-300 mt-2">
+                This is a dedicated rest and recovery day. Focus on hydration, nutrition, and sleep. No throwing.
+            </p>
+        </div>
+    </div>
 
-            <!-- Day 2: Recovery -->
-            <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl">
-                <div class="bg-green-600 dark:bg-green-700 p-4">
-                    <h2 class="text-2xl font-bold text-white">Day 2: Recovery Day</h2>
-                </div>
-                <div class="p-5 space-y-4">
-                    <div>
-                        <label for="day2-focus" class="text-lg font-semibold text-gray-800 dark:text-gray-100 block mb-2">Focus of the Day</label>
-                        <textarea id="day2-focus" rows="2" class="w-full p-3 rounded-md border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 dark:text-gray-200 focus:ring-2 focus:ring-green-500 outline-none transition-all"
-                        >Active recovery. Promote blood flow, flush system, and work on mobility. Listen to the body.</textarea>
-                    </div>
-                    <div>
-                        <label for="day2-pre" class="text-lg font-semibold text-gray-800 dark:text-gray-100 block mb-2">Mobility / Arm Care (Pre)</label>
-                        <textarea id="day2-pre" rows="4" class="w-full p-3 rounded-md border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 dark:text-gray-200 focus:ring-2 focus:ring-green-500 outline-none transition-all"
-                        >Light dynamic warm-up (5 min).
-- Full body foam roll.
-- Hip mobility circuits.
-- Banded T-spine and shoulder work.</textarea>
-                    </div>
-                    <div>
-                        <label for="day2-drills" class="text-lg font-semibold text-gray-800 dark:text-gray-100 block mb-2">Drills & Mechanics</label>
-                        <textarea id="day2-drills" rows="3" class="w-full p-3 rounded-md border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 dark:text-gray-200 focus:ring-2 focus:ring-green-500 outline-none transition-all"
-                        >No high-intent drills.
-- Mirror mechanics (no throw).
-- Balance drills.</textarea>
-                    </div>
-                    <div>
-                        <label for="day2-throwing" class="text-lg font-semibold text-gray-800 dark:text-gray-100 block mb-2">Throwing Protocol</label>
-                        <textarea id="day2-throwing" rows="4" class="w-full p-3 rounded-md border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 dark:text-gray-200 focus:ring-2 focus:ring-green-500 outline-none transition-all"
-                        >Very light toss (optional, based on feel).
-- Max 60-75 ft.
-- Focus purely on clean arm action and movement.
-- 10-15 minutes max.
-- Alternative: No throw, just arm care.</textarea>
-                    </div>
-                    <div>
-                        <label for="day2-post" class="text-lg font-semibold text-gray-800 dark:text-gray-100 block mb-2">Post-Throw Arm Care</label>
-                        <textarea id="day2-post" rows="3" class="w-full p-3 rounded-md border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 dark:text-gray-200 focus:ring-2 focus:ring-green-500 outline-none transition-all"
-                        >Light J-Band flush.
-- Static stretching (lats, pecs, legs).
-- Mobility work (hips, ankles, T-spine).</textarea>
-                    </div>
-                </div>
-            </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const allTextAreas = document.querySelectorAll('textarea');
+            const textAreaIds = Array.from(allTextAreas).map(t => t.id);
 
-            <!-- Day 3: Long Toss -->
-            <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl">
-                <div class="bg-yellow-600 dark:bg-yellow-700 p-4">
-                    <h2 class="text-2xl font-bold text-white">Day 3: Long Toss Day</h2>
-                </div>
-                <div class="p-5 space-y-4">
-                    <div>
-                        <label for="day3-focus" class="text-lg font-semibold text-gray-800 dark:text-gray-100 block mb-2">Focus of the Day</label>
-                        <textarea id="day3-focus" rows="2" class="w-full p-3 rounded-md border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 dark:text-gray-200 focus:ring-2 focus:ring-yellow-500 outline-none transition-all"
-                        >Arm strength, extension, and efficient movement. Get the arm moving freely.</textarea>
-                    </div>
-                    <div>
-                        <label for="day3-pre" class="text-lg font-semibold text-gray-800 dark:text-gray-100 block mb-2">Mobility / Arm Care (Pre)</label>
-                        <textarea id="day3-pre" rows="4" class="w-full p-3 rounded-md border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 dark:text-gray-200 focus:ring-2 focus:ring-yellow-500 outline-none transition-all"
-                        >Full dynamic warm-up (10 min).
-- T-Spine and hip mobility focus.
-- J-Bands (full routine).
-- Reverse throws (deceleration focus).</textarea>
-                    </div>
-                    <div>
-                        <label for="day3-drills" class="text-lg font-semibold text-gray-800 dark:text-gray-100 block mb-2">Drills & Mechanics</label>
-                        <textarea id="day3-drills" rows="3" class="w-full p-3 rounded-md border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 dark:text-gray-200 focus:ring-2 focus:ring-yellow-500 outline-none transition-all"
-                        >Walking Wind-ups (to build momentum).
-- Step-Back Throws (for lower half drive).</textarea>
-                    </div>
-                    <div>
-                        <label for="day3-throwing" class="text-lg font-semibold text-gray-800 dark:text-gray-100 block mb-2">Throwing Protocol</label>
-                        <textarea id="day3-throwing" rows="4" class="w-full p-3 rounded-md border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 dark:text-gray-200 focus:ring-2 focus:ring-yellow-500 outline-none transition-all"
-                        >Long Toss Program:
-- Warm-up throws (to 90 ft).
-- Stretching it out (90 ft to max distance, e.g., 250-300+ ft).
-- Focus on arc and pulling down.
-- Compression phase: 3-5 high-intent throws from max distance.
-- Work back in (120, 90, 60 ft).</textarea>
-                    </div>
-                    <div>
-                        <label for="day3-post" class="text-lg font-semibold text-gray-800 dark:text-gray-100 block mb-2">Post-Throw Arm Care</label>
-                        <textarea id="day3-post" rows="3" class="w-full p-3 rounded-md border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 dark:text-gray-200 focus:ring-2 focus:ring-yellow-500 outline-none transition-all"
-                        >J-Band flush.
-- Scap/shoulder strengthening.
-- Foam roll lats, back, and legs.</textarea>
-                    </div>
-                </div>
-            </div>
+            allTextAreas.forEach(textarea => {
+                const savedValue = localStorage.getItem(textarea.id);
+                if (savedValue) {
+                    textarea.value = savedValue;
+                }
 
-            <!-- Day 4: Mechanics Day -->
-            <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl">
-                <div class="bg-purple-600 dark:bg-purple-700 p-4">
-                    <h2 class="text-2xl font-bold text-white">Day 4: Mechanics Day</h2>
-                </div>
-                <div class="p-5 space-y-4">
-                    <div>
-                        <label for="day4-focus" class="text-lg font-semibold text-gray-800 dark:text-gray-100 block mb-2">Focus of the Day</label>
-                        <textarea id="day4-focus" rows="2" class="w-full p-3 rounded-md border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 dark:text-gray-200 focus:ring-2 focus:ring-purple-500 outline-none transition-all"
-                        >Drill-heavy day. Isolate and correct one specific mechanical flaw (e.g., front side, lead leg block, arm action).</textarea>
-                    </div>
-                    <div>
-                        <label for="day4-pre" class="text-lg font-semibold text-gray-800 dark:text-gray-100 block mb-2">Mobility / Arm Care (Pre)</label>
-                        <textarea id="day4-pre" rows="4" class="w-full p-3 rounded-md border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 dark:text-gray-200 focus:ring-2 focus:ring-purple-500 outline-none transition-all"
-                        >Full dynamic warm-up.
-- J-Bands.
-- Focus on hip/T-spine separation drills (mobility).</textarea>
-                    </div>
-                    <div>
-                        <label for="day4-drills" class="text-lg font-semibold text-gray-800 dark:text-gray-100 block mb-2">Drills & Mechanics</label>
-                        <textarea id="day4-drills" rows="3" class="w-full p-3 rounded-md border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 dark:text-gray-200 focus:ring-2 focus:ring-purple-500 outline-none transition-all"
-                        >Towel Drills (for arm path).
-- Lead Leg Block Drills.
-- Step-Back Drills (for drive).
-- Video analysis after every 10 reps.</textarea>
-                    </div>
-                    <div>
-                        <label for="day4-throwing" class="text-lg font-semibold text-gray-800 dark:text-gray-100 block mb-2">Throwing Protocol</label>
-                        <textarea id="day4-throwing" rows="4" class="w-full p-3 rounded-md border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 dark:text-gray-200 focus:ring-2 focus:ring-purple-500 outline-none transition-all"
-                        >Light catch play (90-120 ft).
-- Focus is 100% on implementing the drill "feel" into the throw.
-- No high-intent.
-- "Feel" flat-ground: 10-15 pitches at 60% focusing *only* on the mechanical fix.</textarea>
-                    </div>
-                    <div>
-                        <label for="day4-post" class="text-lg font-semibold text-gray-800 dark:text-gray-100 block mb-2">Post-Throw Arm Care</label>
-                        <textarea id="day4-post" rows="3" class="w-full p-3 rounded-md border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 dark:text-gray-200 focus:ring-2 focus:ring-purple-500 outline-none transition-all"
-                        >Light J-Band flush.
-- Rotator cuff strengthening (light).
-- Mobility work.</textarea>
-                    </div>
-                </div>
-            </div>
+                textarea.addEventListener('input', (e) => {
+                    localStorage.setItem(e.target.id, e.target.value);
+                });
+            });
 
-            <!-- Day 5: High Intent / Game Sim -->
-            <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl">
-                <div class="bg-red-600 dark:bg-red-700 p-4">
-                    <h2 class="text-2xl font-bold text-white">Day 5: 2nd Bullpen / Game Sim</h2>
-                </div>
-                <div class="p-5 space-y-4">
-                    <div>
-                        <label for="day5-focus" class="text-lg font-semibold text-gray-800 dark:text-gray-100 block mb-2">Focus of the Day</label>
-                        <textarea id="day5-focus" rows="2" class="w-full p-3 rounded-md border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 dark:text-gray-200 focus:ring-2 focus:ring-red-500 outline-none transition-all"
-                        >"Game" simulation. Pitch sequencing, handling "adversity" (simulated counts), and repeating delivery.</textarea>
-                    </div>
-                    <div>
-                        <label for="day5-pre" class="text-lg font-semibold text-gray-800 dark:text-gray-100 block mb-2">Mobility / Arm Care (Pre)</label>
-                        <textarea id="day5-pre" rows="4" class="w-full p-3 rounded-md border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 dark:text-gray-200 focus:ring-2 focus:ring-red-500 outline-none transition-all"
-                        >Full dynamic warm-up (10 min).
-- T-Spine mobility.
-- Hip mobility.
-- J-Bands (full routine).</textarea>
-                    </div>
-                    <div>
-                        <label for="day5-drills" class="text-lg font-semibold text-gray-800 dark:text-gray-100 block mb-2">Drills & Mechanics</label>
-                        <textarea id="day5-drills" rows="3" class="w-full p-3 rounded-md border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 dark:text-gray-200 focus:ring-2 focus:ring-red-500 outline-none transition-all"
-                        >Tempo drills (feeling rhythm).
-- Drills from Day 4 (1-2) to reinforce mechanics.
-- Focus on quick, efficient warm-up.</textarea>
-                    </div>
-                    <div>
-                        <label for="day5-throwing" class="text-lg font-semibold text-gray-800 dark:text-gray-100 block mb-2">Throwing Protocol</label>
-                        <textarea id="day5-throwing" rows="4" class="w-full p-3 rounded-md border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 dark:text-gray-200 focus:ring-2 focus:ring-red-500 outline-none transition-all"
-                        >Long Toss (up to 120 ft, just to get loose).
-- Bullpen: 30-35 pitches.
-- Set 1: 10 pitches (Warm-up).
-- Set 2: 20 pitches (Simulate 5 hitters, 4 pitches each).
-- Set 3: 5 pitches (High-leverage, 3-2 count, 0-0 count).</textarea>
-                    </div>
-                    <div>
-                        <label for="day5-post" class="text-lg font-semibold text-gray-800 dark:text-gray-100 block mb-2">Post-Throw Arm Care</label>
-                        <textarea id="day5-post" rows="3" class="w-full p-3 rounded-md border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 dark:text-gray-200 focus:ring-2 focus:ring-red-500 outline-none transition-all"
-                        >J-Band flush routine.
-- Rotator cuff strengthening.
-- Full-body foam roll.
-- Mobility.</textarea>
-                    </div>
-                </div>
-            </div>
+            const clearButton = document.getElementById('clear-edits-btn');
+            clearButton.addEventListener('click', () => {
+                textAreaIds.forEach(id => {
+                    localStorage.removeItem(id);
+                });
+                location.reload();
+            });
 
-            <!-- Day 6: Active Recovery -->
-            <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl">
-                <div class="bg-teal-600 dark:bg-teal-700 p-4">
-                    <h2 class="text-2xl font-bold text-white">Day 6: Active Recovery</h2>
-                </div>
-                <div class="p-5 space-y-4">
-                    <div>
-                        <label for="day6-focus" class="text-lg font-semibold text-gray-800 dark:text-gray-100 block mb-2">Focus of the Day</label>
-                        <textarea id="day6-focus" rows="2" class="w-full p-3 rounded-md border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 dark:text-gray-200 focus:ring-2 focus:ring-teal-500 outline-none transition-all"
-                        >Flush and feel. Light movement to promote recovery before rest day. Clean up any soreness.</textarea>
-                    </div>
-                    <div>
-                        <label for="day6-pre" class="text-lg font-semibold text-gray-800 dark:text-gray-100 block mb-2">Mobility / Arm Care (Pre)</label>
-                        <textarea id="day6-pre" rows="4" class="w-full p-3 rounded-md border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 dark:text-gray-200 focus:ring-2 focus:ring-teal-500 outline-none transition-all"
-                        >Light dynamic warm-up.
-- Full foam roll.
-- Banded shoulder and scap work.</textarea>
-                    </div>
-                    <div>
-                        <label for="day6-drills" class="text-lg font-semibold text-gray-800 dark:text-gray-100 block mb-2">Drills & Mechanics</label>
-                        <textarea id="day6-drills" rows="3" class="w-full p-3 rounded-md border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 dark:text-gray-200 focus:ring-2 focus:ring-teal-500 outline-none transition-all"
-                        >Light balance drills.
-- Mirror work (checking posture).</textarea>
-                    </div>
-<div>
-                        <label for="day6-throwing" class="text-lg font-semibold text-gray-800 dark:text-gray-100 block mb-2">Throwing Protocol</label>
-                        <textarea id="day6-throwing" rows="4" class="w-full p-3 rounded-md border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 dark:text-gray-200 focus:ring-2 focus:ring-teal-500 outline-none transition-all"
-                        >Light toss (max 75 ft).
-- Just to feel the arm move.
-- 10 minutes, very low intent.
-- OR "touch-feel" flat ground: 10-15 pitches at 50% focusing on clean, easy mechanics.</textarea>
-                    </div>
-                    <div>
-                        <label for="day6-post" class="text-lg font-semibold text-gray-800 dark:text-gray-100 block mb-2">Post-Throw Arm Care</label>
-                        <textarea id="day6-post" rows="3" class="w-full p-3 rounded-md border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 dark:text-gray-200 focus:ring-2 focus:ring-teal-500 outline-none transition-all"
-                        >Light J-Band flush.
-- Full body stretch.
-- Focus on hips, lats, and pecs.</textarea>
-                    </div>
-                </div>
-            </div>
+            const saveButton = document.getElementById('save-btn');
+            saveButton.addEventListener('click', () => {
+                const clone = document.documentElement.cloneNode(true);
 
-        </div> <!-- End Grid -->
+                clone.querySelectorAll('textarea').forEach(clonedTextarea => {
+                    const id = clonedTextarea.id;
+                    const currentValue = document.getElementById(id).value;
+                    clonedTextarea.innerHTML = currentValue;
+                });
 
-        <div class="text-center mt-10 p-6 bg-white dark:bg-gray-800 rounded-xl shadow-md">
-            <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Day 7: Full Rest</h3>
-            <p class="text-lg text-gray-700 dark:text-gray-300 mt-2">
-                This is a dedicated rest and recovery day. Focus on hydration, nutrition, and sleep. No throwing.
-            </Same>
-        </div>
-
-    </div>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const allTextAreas = document.querySelectorAll('textarea');
-            // Create a list of all textarea IDs
-            const textAreaIds = Array.from(allTextAreas).map(t => t.id);
-
-            // 1. Load saved data on page load
-            allTextAreas.forEach(textarea => {
-                const savedValue = localStorage.getItem(textarea.id);
-                if (savedValue) {
-                    textarea.value = savedValue;
-                }
-                
-                // 2. Save data on input
-                // As the user types, save the new value to localStorage
-                textarea.addEventListener('input', (e) => {
-                    localStorage.setItem(e.target.id, e.target.value);
-                });
-            });
-
-            // 3. Clear button functionality
-            const clearButton = document.getElementById('clear-edits-btn');
-            clearButton.addEventListener('click', () => {
-                // Loop through all known textareas and remove their saved data
-                textAreaIds.forEach(id => {
-                    localStorage.removeItem(id);
-                });
-                // Reload the page to show the default values from the HTML
-                location.reload();
-            });
-
-            // 4. Save & Download functionality
-            const saveButton = document.getElementById('save-btn');
-            saveButton.addEventListener('click', () => {
-                // Create a clone of the entire document
-                const clone = document.documentElement.cloneNode(true);
-
-                // Find all textareas in the clone
-                clone.querySelectorAll('textarea').forEach(clonedTextarea => {
-                    // Get the ID of the textarea
-                    const id = clonedTextarea.id;
-                    // Get the *current* value from the *live* page
-                    const currentValue = document.getElementById(id).value;
-                    // Set the innerHTML of the *cloned* textarea.
-                    // This "burns" the current value into the HTML source.
-                    clonedTextarea.innerHTML = currentValue;
-                });
-
-                // Get the full HTML of the modified clone
-                const newHtml = clone.outerHTML;
-                
-                // Create a blob (a file-like object)
-                const blob = new Blob([newHtml], { type: 'text/html' });
-                
-                // Create a temporary link element
-                const a = document.createElement('a');
-a.href = URL.createObjectURL(blob);
-                a.download = 'my_pitching_program.html'; // Set the download filename
-                
-                // Append, click, and remove the link to trigger the download
-                document.body.appendChild(a);
-                a.click();
-                document.body.removeChild(a);
-                
-                // Clean up the object URL
-                URL.revokeObjectURL(a.href);
-            });
-        });
-    </script>
-
+                const newHtml = clone.outerHTML;
+                const blob = new Blob([newHtml], { type: 'text/html' });
+                const a = document.createElement('a');
+                a.href = URL.createObjectURL(blob);
+                a.download = 'my_pitching_program.html';
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(a.href);
+            });
+        });
+    </script>
 </body>
 </html>
