@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
     <title>Editable 7-Day Pitching Program</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
@@ -46,11 +49,26 @@
                     <h2 class="text-2xl font-bold text-white">Day 1: Bullpen Day</h2>
                 </div>
                 <div class="p-5 space-y-4">
-                    <textarea id="day1-focus" rows="2" class="w-full p-3 rounded-md border">High-intent throwing. Focus on command, pitch execution, and simulating game situations. Fastball command is key.</textarea>
-                    <textarea id="day1-pre" rows="4" class="w-full p-3 rounded-md border">Full dynamic warm-up (10 min). - T-Spine mobility (foam roller, rotations). - Hip mobility (leg swings, hip circles). - J-Bands (full routine). - Plyo-ball throws (if part of routine).</textarea>
-                    <textarea id="day1-drills" rows="3" class="w-full p-3 rounded-md border">Rocker Drills (to feel ground connection). Pause Drills (at top of leg lift) to check balance. Connection Ball Drills (if applicable).</textarea>
-                    <textarea id="day1-throwing" rows="4" class="w-full p-3 rounded-md border">Long Toss (build up to 120-150 ft, intent). - Pull-downs (2-3) - Bullpen: 25-30 pitches. - Set 1: 10 fastballs (glove side / arm side). - Set 2: 15 pitches (FB, CH, CB/SL). - Set 3: 5 pitches "out" pitches.</textarea>
-                    <textarea id="day1-post" rows="3" class="w-full p-3 rounded-md border">J-Band flush routine. - Rotator cuff strengthening (light). - T-Spine mobility. - Full-body foam roll.</textarea>
+                    <div>
+                        <label for="day1-focus" class="text-lg font-semibold text-gray-800 dark:text-gray-100 block mb-2">Focus of the Day</label>
+                        <textarea id="day1-focus" rows="2" class="w-full p-3 rounded-md border">High-intent throwing. Focus on command, pitch execution, and simulating game situations. Fastball command is key.</textarea>
+                    </div>
+                    <div>
+                        <label for="day1-pre" class="text-lg font-semibold text-gray-800 dark:text-gray-100 block mb-2">Mobility / Arm Care (Pre)</label>
+                        <textarea id="day1-pre" rows="4" class="w-full p-3 rounded-md border">Full dynamic warm-up (10 min). - T-Spine mobility (foam roller, rotations). - Hip mobility (leg swings, hip circles). - J-Bands (full routine). - Plyo-ball throws (if part of routine).</textarea>
+                    </div>
+                    <div>
+                        <label for="day1-drills" class="text-lg font-semibold text-gray-800 dark:text-gray-100 block mb-2">Drills & Mechanics</label>
+                        <textarea id="day1-drills" rows="3" class="w-full p-3 rounded-md border">Rocker Drills (to feel ground connection). Pause Drills (at top of leg lift) to check balance. Connection Ball Drills (if applicable).</textarea>
+                    </div>
+                    <div>
+                        <label for="day1-throwing" class="text-lg font-semibold text-gray-800 dark:text-gray-100 block mb-2">Throwing Protocol</label>
+                        <textarea id="day1-throwing" rows="4" class="w-full p-3 rounded-md border">Long Toss (build up to 120-150 ft, intent). - Pull-downs (2-3) - Bullpen: 25-30 pitches. - Set 1: 10 fastballs (glove side / arm side). - Set 2: 15 pitches (FB, CH, CB/SL). - Set 3: 5 pitches "out" pitches.</textarea>
+                    </div>
+                    <div>
+                        <label for="day1-post" class="text-lg font-semibold text-gray-800 dark:text-gray-100 block mb-2">Post-Throw Arm Care</label>
+                        <textarea id="day1-post" rows="3" class="w-full p-3 rounded-md border">J-Band flush routine. - Rotator cuff strengthening (light). - T-Spine mobility. - Full-body foam roll.</textarea>
+                    </div>
                 </div>
             </div>
             <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl">
@@ -58,11 +76,26 @@
                     <h2 class="text-2xl font-bold text-white">Day 2: Recovery Day</h2>
                 </div>
                 <div class="p-5 space-y-4">
-                    <textarea id="day2-focus" rows="2" class="w-full p-3 rounded-md border">Active recovery. Promote blood flow, flush system, and work on mobility. Listen to the body.</textarea>
-                    <textarea id="day2-pre" rows="4" class="w-full p-3 rounded-md border">Light dynamic warm-up (5 min). - Full body foam roll. - Hip mobility circuits. - Banded T-spine and shoulder work.</textarea>
-                    <textarea id="day2-drills" rows="3" class="w-full p-3 rounded-md border">No high-intent drills. - Mirror mechanics (no throw). - Balance drills.</textarea>
-                    <textarea id="day2-throwing" rows="4" class="w-full p-3 rounded-md border">Very light toss (optional, based on feel). - Max 60-75 ft. - Focus purely on clean arm action and movement. - 10-15 minutes max. - Alternative: No throw, just arm care.</textarea>
-                    <textarea id="day2-post" rows="3" class="w-full p-3 rounded-md border">Light J-Band flush. - Static stretching (lats, pecs, legs). - Mobility work (hips, ankles, T-spine).</textarea>
+                    <div>
+                        <label for="day2-focus" class="text-lg font-semibold text-gray-800 dark:text-gray-100 block mb-2">Focus of the Day</label>
+                        <textarea id="day2-focus" rows="2" class="w-full p-3 rounded-md border">Active recovery. Promote blood flow, flush system, and work on mobility. Listen to the body.</textarea>
+                    </div>
+                    <div>
+                        <label for="day2-pre" class="text-lg font-semibold text-gray-800 dark:text-gray-100 block mb-2">Mobility / Arm Care (Pre)</label>
+                        <textarea id="day2-pre" rows="4" class="w-full p-3 rounded-md border">Light dynamic warm-up (5 min). - Full body foam roll. - Hip mobility circuits. - Banded T-spine and shoulder work.</textarea>
+                    </div>
+                    <div>
+                        <label for="day2-drills" class="text-lg font-semibold text-gray-800 dark:text-gray-100 block mb-2">Drills & Mechanics</label>
+                        <textarea id="day2-drills" rows="3" class="w-full p-3 rounded-md border">No high-intent drills. - Mirror mechanics (no throw). - Balance drills.</textarea>
+                    </div>
+                    <div>
+                        <label for="day2-throwing" class="text-lg font-semibold text-gray-800 dark:text-gray-100 block mb-2">Throwing Protocol</label>
+                        <textarea id="day2-throwing" rows="4" class="w-full p-3 rounded-md border">Very light toss (optional, based on feel). - Max 60-75 ft. - Focus purely on clean arm action and movement. - 10-15 minutes max. - Alternative: No throw, just arm care.</textarea>
+                    </div>
+                    <div>
+                        <label for="day2-post" class="text-lg font-semibold text-gray-800 dark:text-gray-100 block mb-2">Post-Throw Arm Care</label>
+                        <textarea id="day2-post" rows="3" class="w-full p-3 rounded-md border">Light J-Band flush. - Static stretching (lats, pecs, legs). - Mobility work (hips, ankles, T-spine).</textarea>
+                    </div>
                 </div>
             </div>
             <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl">
@@ -70,11 +103,26 @@
                     <h2 class="text-2xl font-bold text-white">Day 3: Long Toss Day</h2>
                 </div>
                 <div class="p-5 space-y-4">
-                    <textarea id="day3-focus" rows="2" class="w-full p-3 rounded-md border">Arm strength, extension, and efficient movement. Get the arm moving freely.</textarea>
-                    <textarea id="day3-pre" rows="4" class="w-full p-3 rounded-md border">Full dynamic warm-up (10 min). - T-Spine and hip mobility focus. - J-Bands (full routine). - Reverse throws (deceleration focus).</textarea>
-                    <textarea id="day3-drills" rows="3" class="w-full p-3 rounded-md border">Walking Wind-ups (to build momentum). - Step-Back Throws (for lower half drive).</textarea>
-                    <textarea id="day3-throwing" rows="4" class="w-full p-3 rounded-md border">Long Toss Program: - Warm-up throws (to 90 ft). - Stretching it out (90 ft to max distance, e.g., 250-300+ ft). - Focus on arc and pulling down. - Compression phase: 3-5 high-intent throws from max distance. - Work back in (120, 90, 60 ft).</textarea>
-                    <textarea id="day3-post" rows="3" class="w-full p-3 rounded-md border">J-Band flush. - Scap/shoulder strengthening. - Foam roll lats, back, and legs.</textarea>
+                    <div>
+                        <label for="day3-focus" class="text-lg font-semibold text-gray-800 dark:text-gray-100 block mb-2">Focus of the Day</label>
+                        <textarea id="day3-focus" rows="2" class="w-full p-3 rounded-md border">Arm strength, extension, and efficient movement. Get the arm moving freely.</textarea>
+                    </div>
+                    <div>
+                        <label for="day3-pre" class="text-lg font-semibold text-gray-800 dark:text-gray-100 block mb-2">Mobility / Arm Care (Pre)</label>
+                        <textarea id="day3-pre" rows="4" class="w-full p-3 rounded-md border">Full dynamic warm-up (10 min). - T-Spine and hip mobility focus. - J-Bands (full routine). - Reverse throws (deceleration focus).</textarea>
+                    </div>
+                    <div>
+                        <label for="day3-drills" class="text-lg font-semibold text-gray-800 dark:text-gray-100 block mb-2">Drills & Mechanics</label>
+                        <textarea id="day3-drills" rows="3" class="w-full p-3 rounded-md border">Walking Wind-ups (to build momentum). - Step-Back Throws (for lower half drive).</textarea>
+                    </div>
+                    <div>
+                        <label for="day3-throwing" class="text-lg font-semibold text-gray-800 dark:text-gray-100 block mb-2">Throwing Protocol</label>
+                        <textarea id="day3-throwing" rows="4" class="w-full p-3 rounded-md border">Long Toss Program: - Warm-up throws (to 90 ft). - Stretching it out (90 ft to max distance, e.g., 250-300+ ft). - Focus on arc and pulling down. - Compression phase: 3-5 high-intent throws from max distance. - Work back in (120, 90, 60 ft).</textarea>
+                    </div>
+                    <div>
+                        <label for="day3-post" class="text-lg font-semibold text-gray-800 dark:text-gray-100 block mb-2">Post-Throw Arm Care</label>
+                        <textarea id="day3-post" rows="3" class="w-full p-3 rounded-md border">J-Band flush. - Scap/shoulder strengthening. - Foam roll lats, back, and legs.</textarea>
+                    </div>
                 </div>
             </div>
         </div>
@@ -85,11 +133,26 @@
                     <h2 class="text-2xl font-bold text-white">Day 4: Mechanics Day</h2>
                 </div>
                 <div class="p-5 space-y-4">
-                    <textarea id="day4-focus" rows="2" class="w-full p-3 rounded-md border">Drill-heavy day. Isolate and correct one specific mechanical flaw (e.g., front side, lead leg block, arm action).</textarea>
-                    <textarea id="day4-pre" rows="4" class="w-full p-3 rounded-md border">Full dynamic warm-up. - J-Bands. - Focus on hip/T-spine separation drills (mobility).</textarea>
-                    <textarea id="day4-drills" rows="3" class="w-full p-3 rounded-md border">Towel Drills (for arm path). - Lead Leg Block Drills. - Step-Back Drills (for drive). - Video analysis after every 10 reps.</textarea>
-                    <textarea id="day4-throwing" rows="4" class="w-full p-3 rounded-md border">Light catch play (90-120 ft). - Focus is 100% on implementing the drill "feel" into the throw. - No high-intent. - "Feel" flat-ground: 10-15 pitches at 60% focusing *only* on the mechanical fix.</textarea>
-                    <textarea id="day4-post" rows="3" class="w-full p-3 rounded-md border">Light J-Band flush. - Rotator cuff strengthening (light). - Mobility work.</textarea>
+                    <div>
+                        <label for="day4-focus" class="text-lg font-semibold text-gray-800 dark:text-gray-100 block mb-2">Focus of the Day</label>
+                        <textarea id="day4-focus" rows="2" class="w-full p-3 rounded-md border">Drill-heavy day. Isolate and correct one specific mechanical flaw (e.g., front side, lead leg block, arm action).</textarea>
+                    </div>
+                    <div>
+                        <label for="day4-pre" class="text-lg font-semibold text-gray-800 dark:text-gray-100 block mb-2">Mobility / Arm Care (Pre)</label>
+                        <textarea id="day4-pre" rows="4" class="w-full p-3 rounded-md border">Full dynamic warm-up. - J-Bands. - Focus on hip/T-spine separation drills (mobility).</textarea>
+                    </div>
+                    <div>
+                        <label for="day4-drills" class="text-lg font-semibold text-gray-800 dark:text-gray-100 block mb-2">Drills & Mechanics</label>
+                        <textarea id="day4-drills" rows="3" class="w-full p-3 rounded-md border">Towel Drills (for arm path). - Lead Leg Block Drills. - Step-Back Drills (for drive). - Video analysis after every 10 reps.</textarea>
+                    </div>
+                    <div>
+                        <label for="day4-throwing" class="text-lg font-semibold text-gray-800 dark:text-gray-100 block mb-2">Throwing Protocol</label>
+                        <textarea id="day4-throwing" rows="4" class="w-full p-3 rounded-md border">Light catch play (90-120 ft). - Focus is 100% on implementing the drill "feel" into the throw. - No high-intent. - "Feel" flat-ground: 10-15 pitches at 60% focusing *only* on the mechanical fix.</textarea>
+                    </div>
+                    <div>
+                        <label for="day4-post" class="text-lg font-semibold text-gray-800 dark:text-gray-100 block mb-2">Post-Throw Arm Care</label>
+                        <textarea id="day4-post" rows="3" class="w-full p-3 rounded-md border">Light J-Band flush. - Rotator cuff strengthening (light). - Mobility work.</textarea>
+                    </div>
                 </div>
             </div>
             <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl">
@@ -97,11 +160,26 @@
                     <h2 class="text-2xl font-bold text-white">Day 5: 2nd Bullpen / Game Sim</h2>
                 </div>
                 <div class="p-5 space-y-4">
-                    <textarea id="day5-focus" rows="2" class="w-full p-3 rounded-md border">"Game" simulation. Pitch sequencing, handling "adversity" (simulated counts), and repeating delivery.</textarea>
-                    <textarea id="day5-pre" rows="4" class="w-full p-3 rounded-md border">Full dynamic warm-up (10 min). - T-Spine mobility. - Hip mobility. - J-Bands (full routine).</textarea>
-                    <textarea id="day5-drills" rows="3" class="w-full p-3 rounded-md border">Tempo drills (feeling rhythm). - Drills from Day 4 (1-2) to reinforce mechanics. - Focus on quick, efficient warm-up.</textarea>
-                    <textarea id="day5-throwing" rows="4" class="w-full p-3 rounded-md border">Long Toss (up to 120 ft, just to get loose). - Bullpen: 30-35 pitches. - Set 1: 10 pitches (Warm-up). - Set 2: 20 pitches (Simulate 5 hitters, 4 pitches each). - Set 3: 5 pitches (High-leverage, 3-2 count, 0-0 count).</textarea>
-                    <textarea id="day5-post" rows="3" class="w-full p-3 rounded-md border">J-Band flush routine. - Rotator cuff strengthening. - Full-body foam roll. - Mobility.</textarea>
+                    <div>
+                        <label for="day5-focus" class="text-lg font-semibold text-gray-800 dark:text-gray-100 block mb-2">Focus of the Day</label>
+                        <textarea id="day5-focus" rows="2" class="w-full p-3 rounded-md border">"Game" simulation. Pitch sequencing, handling "adversity" (simulated counts), and repeating delivery.</textarea>
+                    </div>
+                    <div>
+                        <label for="day5-pre" class="text-lg font-semibold text-gray-800 dark:text-gray-100 block mb-2">Mobility / Arm Care (Pre)</label>
+                        <textarea id="day5-pre" rows="4" class="w-full p-3 rounded-md border">Full dynamic warm-up (10 min). - T-Spine mobility. - Hip mobility. - J-Bands (full routine).</textarea>
+                    </div>
+                    <div>
+                        <label for="day5-drills" class="text-lg font-semibold text-gray-800 dark:text-gray-100 block mb-2">Drills & Mechanics</label>
+                        <textarea id="day5-drills" rows="3" class="w-full p-3 rounded-md border">Tempo drills (feeling rhythm). - Drills from Day 4 (1-2) to reinforce mechanics. - Focus on quick, efficient warm-up.</textarea>
+                    </div>
+                    <div>
+                        <label for="day5-throwing" class="text-lg font-semibold text-gray-800 dark:text-gray-100 block mb-2">Throwing Protocol</label>
+                        <textarea id="day5-throwing" rows="4" class="w-full p-3 rounded-md border">Long Toss (up to 120 ft, just to get loose). - Bullpen: 30-35 pitches. - Set 1: 10 pitches (Warm-up). - Set 2: 20 pitches (Simulate 5 hitters, 4 pitches each). - Set 3: 5 pitches (High-leverage, 3-2 count, 0-0 count).</textarea>
+                    </div>
+                    <div>
+                        <label for="day5-post" class="text-lg font-semibold text-gray-800 dark:text-gray-100 block mb-2">Post-Throw Arm Care</label>
+                        <textarea id="day5-post" rows="3" class="w-full p-3 rounded-md border">J-Band flush routine. - Rotator cuff strengthening. - Full-body foam roll. - Mobility.</textarea>
+                    </div>
                 </div>
             </div>
             <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl">
@@ -109,11 +187,26 @@
                     <h2 class="text-2xl font-bold text-white">Day 6: Active Recovery</h2>
                 </div>
                 <div class="p-5 space-y-4">
-                    <textarea id="day6-focus" rows="2" class="w-full p-3 rounded-md border">Flush and feel. Light movement to promote recovery before rest day. Clean up any soreness.</textarea>
-                    <textarea id="day6-pre" rows="4" class="w-full p-3 rounded-md border">Light dynamic warm-up. - Full foam roll. - Banded shoulder and scap work.</textarea>
-                    <textarea id="day6-drills" rows="3" class="w-full p-3 rounded-md border">Light balance drills. - Mirror work (checking posture).</textarea>
-                    <textarea id="day6-throwing" rows="4" class="w-full p-3 rounded-md border">Light toss (max 75 ft). - Just to feel the arm move. - 10 minutes, very low intent. - OR "touch-feel" flat ground: 10-15 pitches at 50% focusing on clean, easy mechanics.</textarea>
-                    <textarea id="day6-post" rows="3" class="w-full p-3 rounded-md border">Light J-Band flush. - Full body stretch. - Focus on hips, lats, and pecs.</textarea>
+                    <div>
+                        <label for="day6-focus" class="text-lg font-semibold text-gray-800 dark:text-gray-100 block mb-2">Focus of the Day</label>
+                        <textarea id="day6-focus" rows="2" class="w-full p-3 rounded-md border">Flush and feel. Light movement to promote recovery before rest day. Clean up any soreness.</textarea>
+                    </div>
+                    <div>
+                        <label for="day6-pre" class="text-lg font-semibold text-gray-800 dark:text-gray-100 block mb-2">Mobility / Arm Care (Pre)</label>
+                        <textarea id="day6-pre" rows="4" class="w-full p-3 rounded-md border">Light dynamic warm-up. - Full foam roll. - Banded shoulder and scap work.</textarea>
+                    </div>
+                    <div>
+                        <label for="day6-drills" class="text-lg font-semibold text-gray-800 dark:text-gray-100 block mb-2">Drills & Mechanics</label>
+                        <textarea id="day6-drills" rows="3" class="w-full p-3 rounded-md border">Light balance drills. - Mirror work (checking posture).</textarea>
+                    </div>
+                    <div>
+                        <label for="day6-throwing" class="text-lg font-semibold text-gray-800 dark:text-gray-100 block mb-2">Throwing Protocol</label>
+                        <textarea id="day6-throwing" rows="4" class="w-full p-3 rounded-md border">Light toss (max 75 ft). - Just to feel the arm move. - 10 minutes, very low intent. - OR "touch-feel" flat ground: 10-15 pitches at 50% focusing on clean, easy mechanics.</textarea>
+                    </div>
+                    <div>
+                        <label for="day6-post" class="text-lg font-semibold text-gray-800 dark:text-gray-100 block mb-2">Post-Throw Arm Care</label>
+                        <textarea id="day6-post" rows="3" class="w-full p-3 rounded-md border">Light J-Band flush. - Full body stretch. - Focus on hips, lats, and pecs.</textarea>
+                    </div>
                 </div>
             </div>
         </div>
